@@ -61,22 +61,6 @@ onMounted(async () => {
   @include cq.sm {
     padding-inline: vars.$spacing-sm;
   }
-
-  &::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100vw;
-    height: 514px;
-    pointer-events: none;
-    content: '';
-    background-color: vars.$white;
-    mask-image: url('~/assets/images/top/news.svg');
-    mask-repeat: repeat-x;
-    mask-position: center;
-    mask-size: auto 100%;
-  }
 }
 
 .inner {

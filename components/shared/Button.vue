@@ -71,7 +71,7 @@ const handleClick = (event) => {
 }
 
 .button-secondary {
-  background-color: vars.$secondary;
+  background-color: #000;
 
   @include o.can-hover {
     transition: background-color 0.3s ease-in-out;
