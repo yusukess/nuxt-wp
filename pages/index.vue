@@ -1,6 +1,9 @@
 <template>
   <div :class="$style.wrapper">
-    <div :class="$style.inner"></div>
+    <KeyVisual />
+    <div :class="$style.inner">
+      <NewsList />
+    </div>
   </div>
 </template>
 
