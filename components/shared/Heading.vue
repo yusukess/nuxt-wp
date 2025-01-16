@@ -51,8 +51,6 @@ defineProps({
 
   @include typo.heading2;
 
-  border-bottom: 1px solid vars.$secondary;
-
   @include cq.sm {
     padding-bottom: 0;
   }
