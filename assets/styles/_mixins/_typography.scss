@@ -1,0 +1,141 @@
+@use './container-query' as cq;
+
+// Work Sans
+@mixin worksans-regular {
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin worksans-medium {
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin worksans-bold {
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin heading1 {
+  font-size: 40px;
+  line-height: 72px;
+
+  @include worksans-bold;
+
+  @include cq.sm {
+    font-size: 32px;
+  }
+}
+
+@mixin heading2 {
+  font-size: 34px;
+  line-height: 48px;
+
+  @include worksans-medium;
+
+  @include cq.sm {
+    font-size: 28px;
+  }
+}
+
+@mixin heading3 {
+  font-size: 28px;
+  line-height: 32px;
+
+  @include worksans-regular;
+
+  @include cq.sm {
+    font-size: 22px;
+  }
+}
+
+@mixin heading4 {
+  font-size: 20px;
+  line-height: 40px;
+
+  @include worksans-bold;
+}
+
+@mixin heading5 {
+  font-size: 20px;
+  line-height: 36px;
+
+  @include worksans-regular;
+
+  @include cq.sm {
+    font-size: 18px;
+  }
+}
+
+@mixin heading6 {
+  font-size: 18px;
+  line-height: 32px;
+
+  @include worksans-regular;
+}
+
+@mixin paragraph {
+  font-size: 16px;
+  line-height: 24px;
+
+  @include worksans-regular;
+
+  @include cq.sm {
+    font-size: 14px;
+  }
+}
+
+@mixin paragraph-bold {
+  font-size: 16px;
+  line-height: 24px;
+
+  @include worksans-bold;
+
+  @include cq.sm {
+    font-size: 14px;
+  }
+}
+
+@mixin navi-text {
+  font-size: 14px;
+  line-height: 16px;
+
+  @include worksans-bold;
+
+  @include cq.sm {
+    font-size: 16px;
+  }
+}
+
+@mixin breadcrumbs {
+  font-size: 22px;
+  line-height: 32px;
+
+  @include worksans-regular;
+
+  @include cq.sm {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@mixin button {
+  font-size: 16px;
+  line-height: 32px;
+
+  @include worksans-bold;
+}
+
+@mixin message {
+  font-size: 16px;
+  line-height: 32px;
+
+  @include worksans-regular;
+
+  @include cq.sm {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,21 @@
+body {
+  width: 100%;
+  color: vars.$text;
+  container-type: inline-size;
+
+  @include typo.paragraph;
+}
+
+br {
+  @include mq.responsive;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}

@@ -1,0 +1,18 @@
+// conatiner query
+@mixin lg {
+  @container (width < 1921px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @container (width < 961px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @container (width < 441px) {
+    @content;
+  }
+}

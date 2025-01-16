@@ -1,0 +1,48 @@
+@use 'sass:math';
+@use '../variables' as vars;
+
+@mixin larger-than($width) {
+  @if math.is-unitless($width) {
+    $width: $width * 1px;
+  }
+
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin less-than($width) {
+  @if math.is-unitless($width) {
+    $width: $width * 1px;
+  }
+
+  @media screen and (max-width: #{$width - 1px}) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @include less-than(vars.$breakpoint) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @include larger-than(vars.$breakpoint) {
+    @content;
+  }
+}
+
+@mixin responsive {
+  &[data-responsive='pc'] {
+    @include sp {
+      display: none;
+    }
+  }
+
+  &[data-responsive='sp'] {
+    @include pc {
+      display: none;
+    }
+  }
+}

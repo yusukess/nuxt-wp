@@ -1,0 +1,37 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "format": "prettier --ignore-unknown --write .",
+    "lint:style": "stylelint **/*.{vue,css,scss} --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "date-fns": "^4.1.0",
+    "destyle.css": "^4.0.1",
+    "nuxt": "^3.14.159",
+    "sanitize-html": "^2.14.0",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "postcss-html": "^1.7.0",
+    "prettier": "^3.3.3",
+    "sass": "^1.81.0",
+    "sass-embedded": "^1.81.0",
+    "sass-loader": "^16.0.3",
+    "stylelint": "^16.10.0",
+    "stylelint-config-recess-order": "^5.1.1",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-config-standard-vue": "^1.0.0",
+    "stylelint-scss": "^6.10.0",
+    "unplugin-icons": "^0.20.2"
+  }
+}

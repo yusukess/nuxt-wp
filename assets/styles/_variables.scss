@@ -1,0 +1,44 @@
+/********************************
+  カラーチップ from figma
+*********************************/
+@use './_mixins/other' as o;
+
+// white
+$white: #fff;
+$black: #000;
+
+// black
+$text: #2c2c2c;
+$black-main: #1a1a1a;
+$black-sub: #333;
+$black-point: #555;
+$black-property: #a8a8a8;
+$black-line: #e6e6e6;
+$black-bg: #f0f5f7;
+$black-black: #141517;
+$beige: #ece7d9;
+$primary: #f5f2e9;
+$secondary: #4a6739;
+$secondary-light: #8bbe6d;
+
+// size
+$content-full-width: 1920px;
+$content-max-width: 1200px;
+$content-min-width: 440;
+$size: (
+  sm: 440,
+  md: 960,
+  lg: 1920,
+);
+
+//spaceing
+$spacing-lg: #{o.calc-size(50, 1920)};
+$spacing-md: #{o.calc-size(70, 960)};
+$spacing-sm: #{o.calc-size(30, 440)};
+
+// breakpoint
+$breakpoint: 441px;
+
+// z-index
+$z-index-float: 100;
+$z-index-max: 2147483647;

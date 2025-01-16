@@ -1,0 +1,5 @@
+.nuxt
+content
+dist
+src/app.html
+src/static/**/*.html

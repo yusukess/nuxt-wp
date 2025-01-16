@@ -1,0 +1,25 @@
+@use 'sass:math';
+
+@mixin paragraph-ellipsis($row: 2) {
+  @if $row == 1 {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $row;
+    display: -webkit-box;
+    overflow: hidden;
+  }
+}
+
+@mixin can-hover {
+  @media (any-hover: hover) {
+    @content;
+  }
+}
+
+@function calc-size($base: 1, $parent: 1) {
+  @return math.div($base, $parent) * 100vw;
+}

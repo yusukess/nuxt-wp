@@ -1,0 +1,41 @@
+html,
+body {
+  overscroll-behavior-y: none; /* ブラウザによってどちらか一方が採用されるので両方に指定 */
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  touch-action: manipulation;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-touch-callout: none;
+}
+
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: middle; /* 要素下に出る余白を消したいのでbaseline以外にしておきたい */
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type='button']:disabled,
+[type='reset']:disabled,
+[type='submit']:disabled {
+  cursor: default;
+}
+
+::placeholder {
+  color: #ccc;
+}
