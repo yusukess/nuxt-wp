@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.wrapper">
-    <NuxtLink :to="`/posts/${props.id}`" :class="$style.link">
+    <NuxtLink :to="`/news/${props.id}`" :class="$style.link">
       <img :src="props.thumbnail" alt="" :class="$style.thumbnail" />
       <div :class="$style.contents">
         <p :class="$style.date">{{ formattedDate }}</p>

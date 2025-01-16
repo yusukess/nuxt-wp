@@ -11,6 +11,6 @@
 
 <style lang="scss" module>
 .wrapper {
-  /* ! */
+  padding: 20px;
 }
 </style>

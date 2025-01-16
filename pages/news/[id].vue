@@ -1,6 +1,6 @@
 <template>
   <div v-if="post">
-    <h1 :class="$style.title">見出し：{{ post.title.rendered }}</h1>
+    <h1 :class="$style.title">{{ post.title.rendered }}</h1>
     <div v-html="post.content.rendered"></div>
     <div :class="$style.navigation">
       <NuxtLink v-if="previousPost" :to="`/news/${previousPost.id}`"
@@ -33,8 +33,6 @@ const fetchPosts = async () => {
 
     pageData.value = categories[0];
 
-    console.log(pageData.value.id);
-
     // 次と前の記事を取得
     const { data: allPosts } = await $axios.get('/posts', {
       params: {
@@ -65,7 +63,7 @@ onMounted(() => {
 
 <style lang="scss" module>
 .title {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: bold;
 }
 

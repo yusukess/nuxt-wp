@@ -1,8 +1,6 @@
 <template>
   <div :class="$style.layout" :data-mode="mode">
-    <Header />
     <slot />
-    <Footer />
   </div>
 </template>
 
@@ -22,5 +20,6 @@ const mode = computed(() => {
   position: relative;
   z-index: 1;
   container-type: inline-size;
+  padding: 24px;
 }
 </style>

@@ -27,7 +27,7 @@ defineProps({
 <style lang="scss" module>
 .image {
   flex: 1;
-  max-width: 373px;
+  max-width: 200px;
 
   @include cq.md {
     max-width: 100%;
